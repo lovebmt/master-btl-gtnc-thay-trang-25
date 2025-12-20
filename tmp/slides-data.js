@@ -1081,5 +1081,25 @@ const slides = [
             <p><em> <strong>Faster convergence:</strong> Pseudo-random rule with appropriate $q_0$ should balance search efficiency</p>
             <p></em> <strong>Robustness across instances:</strong> Multi-component heuristic should adapt better to different problem characteristics (SCA vs. CON scenarios)</p>
         `
+    },
+    {
+        title: "References",
+        presenter: "T4",
+        content: `
+            <p><strong>References:</strong></p>
+            <ol style="font-size: 0.8em; line-height: 1.4;">
+                <li>Dorigo, M., & Stützle, T. (2004). <em>Ant Colony Optimization</em>. MIT Press.</li>
+                <li>Dorigo, M., Maniezzo, V., & Colorni, A. (1996). Ant system: optimization by a colony of cooperating agents. <em>IEEE Transactions on Systems, Man, and Cybernetics, Part B</em>, 26(1), 29-41.</li>
+                <li>Stützle, T., & Hoos, H. H. (2000). MAX-MIN Ant System. <em>Future Generation Computer Systems</em>, 16(8), 889-914.</li>
+                <li>Toth, P., & Vigo, D. (2002). <em>The Vehicle Routing Problem</em>. SIAM Monographs on Discrete Mathematics and Applications.</li>
+                <li>Min, H. (1989). The multiple vehicle routing problem with simultaneous delivery and pick-up points. <em>Transportation Research Part A</em>, 23(5), 377-386.</li>
+                <li>Nagy, G., & Salhi, S. (2005). Heuristic algorithms for single and multiple depot vehicle routing problems with pickups and deliveries. <em>European Journal of Operational Research</em>, 162(1), 126-141.</li>
+                <li>Ai, T. J., & Kachitvichyanukul, V. (2009). A particle swarm optimization for the vehicle routing problem with simultaneous pickup and delivery. <em>Computers & Operations Research</em>, 36(5), 1693-1702.</li>
+                <li>Bianchessi, N., & Righini, G. (2007). Heuristic algorithms for the vehicle routing problem with simultaneous pick-up and delivery. <em>Computers & Operations Research</em>, 34(2), 578-594.</li>
+                <li>Dethloff, J. (2001). Vehicle routing and reverse logistics: The vehicle routing problem with simultaneous delivery and pick-up. <em>OR Spektrum</em>, 23(1), 79-96.</li>
+                <li>Montané, F. A. T., & Galvão, R. D. (2006). A tabu search algorithm for the vehicle routing problem with simultaneous pick-up and delivery service. <em>Computers & Operations Research</em>, 33(3), 595-619.</li>
+            </ol>
+            <p style="margin-top: 20px; font-size: 0.9em; text-align: center;"><em>Thank you for your attention!</em></p>
+        `
     }
 ];
