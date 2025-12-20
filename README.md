@@ -14,20 +14,7 @@ Dr. Le Hong Trang
 
 - **Notebook**: [GTNC_ACO.ipynb](GTNC_ACO.ipynb)
 - **Presentation**: [index.html](index.html)
-
-## Project Structure
-
-```
-├── GTNC_ACO.ipynb              # Main notebook with ACO implementation
-├── ACO_slides_bundled.html     # Self-contained presentation slides
-├── tmp/                        # Source files for slides
-│   ├── ACO_slides.html
-│   ├── slides-data.js
-│   ├── style.css
-│   ├── bundle_aco_slides.py    # Script to bundle slides
-│   └── release.sh              # Release automation script
-└── README.md
 ```
 
 ---
-December 2025
+December 2025   
