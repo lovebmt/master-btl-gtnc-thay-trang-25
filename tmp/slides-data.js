@@ -1,13 +1,12 @@
 const slides = [
     {
-        title: "Content",
+        title: "",
         content: `
             <p><div align="center"></p>
             <p>  <h6></p>
             <p>  <h1><b>Ant Colony Optimization and Its Application to</p>
             <p>the Vehicle Routing Problem with Pickups and</p>
             <p>Deliveries</b></h1></p>
-            <p>  <h3><b>Advanced Algorithms</b></h3></p>
             
             <p>  <h3><b>Group 20</b></h3></p>
             
@@ -634,12 +633,7 @@ const slides = [
     {
         title: "ACO Class Implementation",
         content: `
-        `
-    },
-    {
-        title: "Explanation of the \`AntColonyOptimizer\` Class",
-        content: `
-            
+            <p><h3> Explanation of the \`AntColonyOptimizer\` Class </h3></p>
             <p>The \`AntColonyOptimizer\` class is constructed to solve the <strong>Vehicle Routing Problem with Simultaneous Pickups and Deliveries (VRPSPD)</strong>. The objective is to minimize the total travel distance of vehicles while serving all customers from a single depot. The core algorithm is <strong>Ant Colony Optimization (ACO)</strong> [18].</p>
             
             <p><strong>1. Initialization (\`__init__\`)</strong></p>
@@ -810,37 +804,32 @@ const slides = [
     {
         title: "Defining Helper Functions for Exporting Test Results and Visualization",
         content: `
-        Implementation Code
+            <p>This section defines helper functions to facilitate the export of ACO test results to Excel files and to visualize the solutions obtained from the ACO algorithm.</p>
         `
     },
     {
         title: "DethCON Instance Single Test",
         content: `
-            <p><h3>Implementation Code</h3></p>
+            <img src="image/aco_solution_for_dethCON.png" alt="ACO Solution for DethCON" style="max-width: 80%; max-height: 500px; height: auto; display: block; margin: 0 auto;">
         `
     },
     {
         title: "DethSCA Instance Single Test",
         content: `
-            <p><h3>Implementation Code</h3></p>
+            <img src="image/aco_solution_for_dethSCA.png" alt="ACO Solution for DethSCA" style="max-width: 80%; max-height: 500px; height: auto; display: block; margin: 0 auto;">
         `
     },
     
     {
         title: "Benchmark Testing",
         content: `
-            <p><h3>Implementation Code</h3></p>
+            <p><h3>Run the ACO algorithm 10 times, calculate the average and best distances across the runs, and export the results to an Excel file (ACO_Dethloff_Benchmark_Summary.xlsx)</h3></p>
         `
     },
     {
         title: "SECTION 5: RESULTS AND EVALUATION",
         content: `
-        `
-    },
-    {
-        title: "Content",
-        content: `
-            <p>This section presents and analyzes the results obtained from running the implemented Ant Colony Optimization (ACO) algorithm on Dethloff-style VRPSPD benchmark datasets. The results are aggregated after 10 runs for each instance.</p>
+        <p>This section presents and analyzes the results obtained from running the implemented Ant Colony Optimization (ACO) algorithm on Dethloff-style VRPSPD benchmark datasets. The results are aggregated after 10 runs for each instance.</p>
         `
     },
     {
@@ -872,18 +861,13 @@ const slides = [
             
             <p>The aggregated results of the benchmark runs are presented in the table below:</p>
             
-            <p>| Problem   | ACO Avg   | ACO Best  | Vehicles (Best Run) |</p>
-            <p>| :-------- | :-------- | :-------- | :------------------ |</p>
-            <p>| SCA_mu3   | 809.64    | 785.73    | 4                   |</p>
-            <p>| SCA_mu8   | 1217.46   | 1182.63   | 9                   |</p>
-            <p>| CON_mu3   | 939.75    | 883.96    | 4                   |</p>
-            <p>| CON_mu8   | 1096.46   | 1067.85   | 9                   |</p>
+            <img src="image/aco_results_table.png" alt="ACO Results Table" style="max-width: 70%; max-height: 400px; height: auto; display: block; margin: 20px auto;">
             
             <p><em>(Note: "ACO Avg" and "ACO Best" values represent total distance. "Vehicles (Best Run)" indicates the number of vehicles used in the solution corresponding to the "ACO Best" result for that instance)</em>.</p>
         `
     },
     {
-        title: "Evaluation and Analysis",
+        title: "Evaluation and Analysis (Part 1)",
         content: `
             
             <p><strong>a) Solution Quality (\`ACO Best\`):</strong></p>
@@ -911,6 +895,11 @@ const slides = [
             <p><em> \`CON_mu8\`: Avg (1096.46) vs. Best (1067.85). Deviation $\\approx 28.61$ ($\\approx 2.68\\%$ relative to Best).</p>
             
             <p></em> Overall, the algorithm demonstrates good stability for \`SCA_mu3\`, \`SCA_mu8\`, and especially \`CON_mu8\`, with a relatively low deviation between average and best results (under 3.5%). The \`CON_mu3\` instance shows a slightly higher deviation (approx. 6.31%), suggesting the algorithm might be more sensitive to random initialization or search structure in this case, though it still found a good solution.</p>
+        `
+    },
+    {
+        title: "Evaluation and Analysis (Part 2)",
+        content: `
             
             <p><strong>c) Number of Vehicles Used (\`Vehicles (Best Run)\`):</strong></p>
             
@@ -939,8 +928,6 @@ const slides = [
     {
         title: "SECTION 6: PROPOSED ENHANCEMENTS",
         content: `
-            <p><h1>SECTION 6: PROPOSED ENHANCEMENTS</h1></p>
-            
             <p>This section outlines the proposed improvements to the current ACO implementation for solving VRPSPD. The enhancements focus on refining the visibility (heuristic) function and adopting a hybrid ACO strategy to improve solution quality and algorithm robustness.</p>
         `
     },
